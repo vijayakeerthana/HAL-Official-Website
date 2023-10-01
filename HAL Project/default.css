@@ -1,0 +1,464 @@
+#container {
+  margin: 0 auto;
+}
+
+#topline {
+  height: 40px;
+  background-color: #243b58;
+  padding: 5px;
+}
+
+.button1 {
+  margin-top: 3px;
+  padding: 10px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+.button2 {
+  margin-top: 3px;
+  padding: 10px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  float: right;
+}
+.button3 {
+  margin-top: 3px;
+  padding: 10px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  left: 1210px;
+}
+.logo {
+  float: left;
+  padding: 8px 0;
+}
+
+#brand {
+  padding: 20px;
+}
+
+.h31 {
+  color: #27467d;
+}
+
+.p1 {
+  color: black;
+  font-size: large;
+  font-weight: 200;
+  margin-top: 2px;
+}
+
+#menu ul {
+  position: absolute;
+  top: 55px;
+  left: 45%;
+  display: inline-flex;
+}
+
+#menu ul li {
+  width: 100px;
+  list-style: none;
+  text-align: center;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  padding: 0 100px;
+}
+
+.active,
+#menu ul li:hover {
+  background-color: #a7c0eb;
+  border-radius: 5px;
+}
+
+.submenu1 {
+  display: none;
+  z-index: 1;
+}
+
+.submenu1 ul li a {
+  color: white;
+}
+
+#menu ul li:hover .submenu1 {
+  display: block;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -110px;
+}
+
+#menu ul li:hover .submenu1 ul {
+  margin: 3px;
+  display: block;
+}
+
+#menu ul li:hover .submenu1 ul li {
+  position: relative;
+  left: 70px;
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background-color: #27467d;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+
+figure {
+  position: relative;
+  left: 0;
+  width: 400%;
+  animation: 30s slide infinite;
+}
+
+.slide {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.slide img {
+  width: 100%;
+  height: 650px;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  55% {
+    left: -300%;
+  }
+  65% {
+    left: -300%;
+  }
+  66% {
+    left: -200%;
+  }
+  74% {
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  85% {
+    left: -100%;
+  }
+  90% {
+    left: 0;
+  }
+  1000% {
+    left: 0;
+  }
+}
+#panel {
+  width: 100%;
+  height: 950px;
+  margin-top: -160px;
+  background: url(images/bg.png);
+}
+#display {
+  width: 350px;
+  height: 390px;
+  padding: 18px;
+  margin: 50px;
+  background-color: white;
+  position: relative;
+  top: 50px;
+}
+
+#img {
+  padding: 17px 17px 8px 25px;
+}
+#display .hal {
+  background-color: rgb(209, 209, 209);
+  font-size: 32;
+  text-align: center;
+}
+.click-button {
+  display: inline-block;
+  padding: 5px;
+  background-color: #9dc5f0; /* Blue background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+/* Style for the button on hover */
+.click-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.heading {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  background: linear-gradient(#0056b3, rgb(106, 106, 255));
+  color: white;
+}
+
+.heading h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+/*Table*/
+
+table {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+  overflow: hidden;
+  margin-top: 400px;
+}
+.tglance {
+  margin-top: 220px;
+}
+td,
+th {
+  padding: 15px 20px;
+  text-align: center;
+}
+th {
+  background-color: #0056b3;
+  color: #fafafa;
+  font-family: "Open Sans", Sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+tr {
+  width: 100%;
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+}
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+.Latestnews {
+  width: 500px;
+  height: 400px;
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+  margin-top: 790px;
+  margin-left: -10px;
+  /* Gray background color */
+}
+/* Style for the table heading */
+
+.Latestnews th {
+  background-color: #aeaeaf;
+  /* Dark gray background color for heading */
+  color: rgb(8, 8, 8);
+  /* White text color for heading */
+  padding: 10px;
+  text-align: center;
+}
+/* Style for the table cell containing the scrolling links */
+
+.Latestnews td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.Latestnews ul {
+  list-style-type: style none;
+}
+/* Style for the links */
+
+.Latestnews a {
+  text-decoration: none;
+  font-size: large;
+  color: #071f3b;
+  display: block;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+/* Style for the links when hovered */
+
+.Latestnews a:hover {
+  background-color: #aeacac;
+  /* Light gray background color on hover */
+}
+
+.helpline {
+  margin-top: 220px;
+}
+#display1 {
+  width: 350px;
+  height: 380px;
+  padding: 18px;
+  margin: 50px;
+  background-color: white;
+  position: relative;
+  left: 980px;
+  top: -418px;
+}
+
+#display1 .awards {
+  background-color: rgb(181, 179, 179);
+  font-size: 32;
+  text-align: center;
+}
+#trophy .img {
+  margin: 10px;
+}
+
+/*quote*/
+/* Import Google Font - Poppins */
+/* Import Google Font - Poppins */
+.wrapper {
+  width: 605px;
+  background: #edeffa;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -400px;
+  left: 400px;
+}
+header,
+.content :where(i, p, span) {
+  color: #202842;
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .content {
+  margin: 35px 0;
+}
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+.quote-area i {
+  font-size: 15px;
+}
+.quote-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+.quote-area i:last-child {
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+.content .author {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.wrapper .buttons {
+  border-top: 1px solid #ccc;
+}
+.buttons .features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features ul {
+  display: flex;
+}
+.features ul li {
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  cursor: pointer;
+  color: #5372f0;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5372f0;
+  transition: all 0.3s ease;
+}
+.features ul li:first-child {
+  margin-left: 0;
+}
+.features ul li:is(:hover, .active) {
+  color: #fff;
+  background: #5372f0;
+}
+.features ul .speech.active {
+  pointer-events: none;
+}
+.buttons button {
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: #5372f0;
+}
+.buttons button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.footer {
+  height: 60px;
+  margin-top: -280px;
+  background-color: #dadbdc;
+  padding: 10px 30px;
+  margin-top: 15px;
+  text-align: center;
+  margin-top: -280px;
+}
+.footer p {
+  padding: 15px;
+  font-weight: 200;
+}
